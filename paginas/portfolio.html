@@ -1,0 +1,114 @@
+<!-- la idea en esta pagina es poner varios carruseles, que no supe usarlos de boostrap, asi que busque como hacerlo, deberia tener 5 carruseles debajo del otro para las diferentes sesiones-->
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-portfolio.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="../paginas/servicios.html">servicios</a></li>
+                <li class="menu-item"><a href="../paginas/portfolio.html">portfolio</a></li>
+                <li class="logo"><a href="../index.html">inicio</a></li>
+                <li class="menu-item"><a href="./sobre-mi.html">sobre mi</a></li>
+                <li class="menu-item"><a href="../paginas/contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="bannerBienvenida">
+            <h1>the observer</h1>
+        </section>
+        <section id="titulo">
+            <p> Sesion urbana. </p>
+        </section>
+        <div class="portfolio-container">
+            <button id="anterior"> anterior </button>
+            <div class="carrusel-container">
+                <div id="carrusel">
+    
+                    <div id="img1">
+                        <img src="../imagenes/carousel-images/img-carrusel1.jpg">
+                    </div>
+                    <div id="img2">
+                        <img src="../imagenes/carousel-images/img-carrusel2.jpg">
+                    </div>
+                    <div id="img3">
+                        <img src="../imagenes/carousel-images/img-carrusel3.jpg">
+                    </div>
+                    <div id="img4">
+                        <img src="../imagenes/carousel-images/img-carrusel4.jpg">
+                    </div>
+                </div>
+            </div>
+            <button id="siguiente"> siguiente </button>
+
+
+        </div>
+    </main>
+</body>
+
+<footer>
+    <div> 
+        <p> &copy; 2023 the observer. </p> 
+    </div>
+    <nav>
+        <ul>  
+            <li class="footer-item"><a href="https://www.instagram.com/theobservershots/"> instagram </a></li>
+            <li class="footer-item"><a href="https://www.behance.net/ciroburgio"> behance </a></li>
+            <li class="logo"><a href=""> inicio </a></li>
+            <li class="footer-item"><a href="https://www.pinterest.es/ciroburgio/"> pinterest </a></li>
+            <li class="footer-item"><a href="mailto:ciriacovalentin31@gmail.com"> correo </a></li>
+        </ul>
+    </nav>
+</footer>
+
+<!-- el codigo de js esta aca por que estaba probandolo -->
+<script>
+    const elemento1 = document.getElementById("img1");
+    const elemento2 = document.getElementById("img2");
+    const elemento3 = document.getElementById("img3");
+    const elemento4 = document.getElementById("img4");
+
+    const carrusel = document.getElementById("carrusel");
+    const tamaño = 600; 
+
+    const botonSiguiente = document.getElementById("siguiente");  
+    const botonAnterior = document.getElementById("anterior"); 
+    const arregloImg = [ elemento1, elemento2, elemento3, elemento4 ];
+    let posActual = 0;
+    const posFinal = arregloImg.length-1;
+    function siguiente (  ) {
+        if( posActual < posFinal ){
+            posActual = posActual+1;
+            carrusel.style.transform = `translateX(-${posActual*tamaño}px)`;
+        }    
+    }
+    function anterior (  ) {
+        if( posActual > 0 ){
+            posActual = posActual-1;
+            console.log("testeo", posFinal, posActual);
+            carrusel.style.transform = `translateX(-${posActual*tamaño}px)`;
+        } 
+    }
+
+    botonSiguiente.addEventListener("click", (event) => {
+        siguiente (  );
+    });
+    botonAnterior.addEventListener("click", (event) => {
+        anterior (  );
+    });
+
+
+</script>
+</html>

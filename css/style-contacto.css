@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Playfair Display', serif;
+}
+header{
+    width: 100%;
+    padding: 0%;
+    position: fixed;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header .menu-item a{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    padding: 0px 14px;
+    color: aliceblue;
+    text-decoration: none;
+}
+header .logo a{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    padding: 0px 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+#bannerBienvenida {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/portada-banner.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 250px 0px;
+    margin: 15px 15px 100px 15px;
+    
+    
+}
+#bannerBienvenida h1{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    color: aliceblue;
+    justify-content: center;
+}
+
+body {
+    background-image: url(../imagenes/background-image.jpg);
+}
+#contacto{
+    padding: 50px 0px;
+}
+#contacto h2{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    color: #333;
+    justify-content: center;
+}
+#contacto p{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #333;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: 35px;
+}
+
+.grid-item {
+    background-color: #333;
+    padding: 40px;
+    text-align: center;
+}
+.grid-item a{
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 24px;
+}
+footer {
+    background-color: #333;
+    padding: 100px 0px;
+    margin-top: 100px;
+}
+footer p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
+}
+footer ul{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+footer .footer-item a{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    padding: 0px 16px;
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+footer .logo a{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    padding: 0px 16px;
+    color: aliceblue;
+    text-decoration: none;
+}

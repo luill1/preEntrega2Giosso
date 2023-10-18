@@ -1,0 +1,46 @@
+
+.portfolio-container {
+    display: flex;
+    flex-direction: row;
+
+}
+#titulo{
+    padding: 50px 0px;
+}
+#titulo p{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #333;
+    justify-content: center;
+}
+.carrusel-container {
+    display: flex;
+    justify-content: start;
+    max-width: 600;
+    overflow: hidden;
+    margin: auto;
+}
+#carrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+#img1, img{
+    width: 600;
+    object-fit: cover;
+}
+#img2, img{
+    width: 600;
+    object-fit: cover;
+}
+#img3, img{
+    width: 600;
+    object-fit: cover;
+}
+#img4, img{
+    width: 600;
+    object-fit: cover;
+}
