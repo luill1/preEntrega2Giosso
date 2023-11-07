@@ -1,7 +1,3 @@
-<!-- la idea en esta pagina es poner varios carruseles, que no supe usarlos de boostrap, asi que busque como hacerlo, deberia tener 5 carruseles debajo del otro para las diferentes sesiones-->
-
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style-portfolio.css">
+    <link rel="stylesheet" href="../css/styles-portfolio.css">
 </head>
 <body>
     <header> 
@@ -36,7 +32,6 @@
             <button id="anterior"> anterior </button>
             <div class="carrusel-container">
                 <div id="carrusel">
-    
                     <div id="img1">
                         <img src="../imagenes/carousel-images/img-carrusel1.jpg">
                     </div>
@@ -49,15 +44,36 @@
                     <div id="img4">
                         <img src="../imagenes/carousel-images/img-carrusel4.jpg">
                     </div>
+                    <div id="img5">
+                        <img src="../imagenes/carousel-images/img-carrusel5.jpeg">
+                    </div>
+                    <div id="img6-">
+                        <img src="../imagenes/carousel-images/img-carrusel6.jpeg">
+                    </div>
+                    <div id="img7">
+                        <img src="../imagenes/carousel-images/img-carrusel7.jpeg">
+                    </div>
+                    <div id="img8">
+                        <img src="../imagenes/carousel-images/img-carrusel8.jpeg">
+                    </div>
+                    <div id="img9">
+                        <img src="../imagenes/carousel-images/img-carrusel9.jpeg">
+                    </div>
+                    <div id="img10">
+                        <img src="../imagenes/carousel-images/img-carrusel10.jpeg">
+                    </div>
+                    <div id="img11">
+                        <img src="../imagenes/carousel-images/img-carrusel11.jpg">
+                    </div>
+                    <div id="img12">
+                        <img src="../imagenes/carousel-images/img-carrusel12.jpeg">
+                    </div>
                 </div>
             </div>
             <button id="siguiente"> siguiente </button>
-
-
         </div>
     </main>
 </body>
-
 <footer>
     <div> 
         <p> &copy; 2023 the observer. </p> 
@@ -72,17 +88,21 @@
         </ul>
     </nav>
 </footer>
-
-<!-- el codigo de js esta aca por que estaba probandolo -->
 <script>
     const elemento1 = document.getElementById("img1");
     const elemento2 = document.getElementById("img2");
     const elemento3 = document.getElementById("img3");
     const elemento4 = document.getElementById("img4");
-
+    const elemento5 = document.getElementById("img5");
+    const elemento6 = document.getElementById("img6");
+    const elemento7 = document.getElementById("img7");
+    const elemento8 = document.getElementById("img8");
+    const elemento9 = document.getElementById("img9");
+    const elemento10 = document.getElementById("im10");
+    const elemento11 = document.getElementById("img11");
+    const elemento12 = document.getElementById("img12");
     const carrusel = document.getElementById("carrusel");
     const tamaño = 600; 
-
     const botonSiguiente = document.getElementById("siguiente");  
     const botonAnterior = document.getElementById("anterior"); 
     const arregloImg = [ elemento1, elemento2, elemento3, elemento4 ];
@@ -101,14 +121,11 @@
             carrusel.style.transform = `translateX(-${posActual*tamaño}px)`;
         } 
     }
-
     botonSiguiente.addEventListener("click", (event) => {
         siguiente (  );
     });
     botonAnterior.addEventListener("click", (event) => {
         anterior (  );
     });
-
-
 </script>
 </html>
