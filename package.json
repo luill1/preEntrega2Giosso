@@ -1,11 +1,11 @@
 {
-  "name": "preentrega2giosso",
-  "version": "1.0.0",
-  "description": "",
+  "name": "preentregagiosso",
+  "version": "1.2.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shelen Giosso",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }

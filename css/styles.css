@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #333;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,7 +29,7 @@ header .menu-item a {
 header .logo a {
   font-family: "Playfair Display", serif;
   font-size: 24px;
-  padding: 0px 16px;
+  padding: 0px 18px;
   color: aliceblue;
   text-decoration: none;
 }
@@ -83,6 +83,210 @@ body .contenedorColumnas p {
   font-size: 18px;
 }
 
+/*SASS de sobre mi*/
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.home .home-content {
+  background-color: transparent;
+  max-width: 700px;
+}
+.home h2 {
+  font-size: 58px;
+  color: aliceblue;
+  line-height: 1.2;
+}
+.home h3 {
+  font-size: 32px;
+  color: aqua;
+}
+.home p {
+  font-size: 24px;
+  margin: 20px 0 40px;
+  color: aliceblue;
+}
+.home .btn-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  width: 345px;
+  height: 50px;
+}
+.home a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.home a:hover {
+  background: #333;
+  transition: 0.5s;
+}
+
+/*SASS de servicios*/
+.body-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-cards .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+.body-cards .card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: aliceblue;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: 0.5s;
+}
+.body-cards .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.body-cards img {
+  width: 100%;
+  height: 340px;
+}
+.body-cards .body-content {
+  padding: 15px;
+  text-align: center;
+}
+.body-cards p {
+  font-family: "Playfair Display", serif;
+  line-height: 1.5;
+  color: #333;
+}
+.body-cards h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #333;
+}
+.body-cards a {
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.body-cards a:hover {
+  background: #333;
+  color: aliceblue;
+}
+
+/*SASS de portfolio*/
+#titulo {
+  padding: 50px 0px;
+}
+
+p {
+  display: flex;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #333;
+  justify-content: center;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-container .carrusel-container {
+  display: flex;
+  justify-content: start;
+  max-width: 600px;
+  max-height: 600px;
+  overflow: hidden;
+  margin: auto;
+}
+.portfolio-container #carrusel {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-container #img1 img {
+  width: 600px;
+  object-fit: cover;
+}
+.portfolio-container #img2 img {
+  width: 600px;
+  object-fit: cover;
+}
+.portfolio-container #img3 img {
+  width: 600px;
+  object-fit: cover;
+}
+.portfolio-container #img4 img {
+  width: 600px;
+  object-fit: cover;
+}
+
+/*SASS de contacto*/
+#contacto {
+  padding: 50px 20px;
+}
+#contacto h2 {
+  display: flex;
+  font-family: "Playfair Display", serif;
+  font-size: 65px;
+  color: #333;
+  justify-content: center;
+}
+#contacto p {
+  display: flex;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 35px;
+}
+.grid-container .grid-item {
+  background-color: transparent;
+  padding: 40px;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+  text-align: center;
+}
+.grid-container .grid-item:hover {
+  background: #333;
+  transition: 0.5s;
+}
+.grid-container a {
+  font-family: "Playfair Display", serif;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 24px;
+}
+
 footer {
   background-color: #333;
   padding: 100px 0px;
@@ -99,14 +303,7 @@ footer ul {
   align-items: center;
   list-style: none;
 }
-footer .footer-item a {
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-  padding: 0px 16px;
-  color: aliceblue;
-  text-decoration: none;
-}
-footer .logo a {
+footer a {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   padding: 0px 16px;
