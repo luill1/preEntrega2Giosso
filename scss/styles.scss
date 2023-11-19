@@ -4,7 +4,7 @@
     font-family: 'Playfair Display', serif;
 }
 header{
-    background-color:#333;
+    background-color: #333;
     top: 0;
     left: 0;
     width: 100%;
@@ -17,21 +17,21 @@ header{
         align-items: center;
         list-style: none;
     }
-    .menu-item a{
+    a{
         font-family: 'Playfair Display', serif;
         font-size: 24px;
         padding: 0px 14px;
         color: aliceblue;
         text-decoration: none;
     }
-    .logo a{
-        font-family: 'Playfair Display', serif;
-        font-size: 24px;
-        padding: 0px 18px;
-        color: aliceblue;
-        text-decoration: none;
+}  
+@media ( max-width: 425px){
+    header {
+        a {
+            font-size: 24px;
+        }
     }
-}    
+}  
 body{
     background-image: url(../imagenes/background-image.jpg);
     #bannerBienvenida {
@@ -47,7 +47,7 @@ body{
         align-items: center;
         h1{
             font-family: 'Playfair Display', serif;
-            font-size: 140px;
+            font-size: 128px;
             color: aliceblue;
         }
     }
@@ -71,12 +71,21 @@ body{
         h5 {
             display: flex;
             justify-content: center;
+            font-family: 'Playfair Display', serif;
             font-size: 24px;
         }
         p {
             display: flex;
             justify-content: center;
-            font-size: 18px;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+}
+@media ( max-width: 425px ){
+    #bannerBienvenida {
+        width: 100vh;
+        h1{
+            font-size: 52px;
         }
     }
 }
@@ -90,10 +99,10 @@ body{
         background-color: transparent;
         max-width: 700px;
     }
-    h2 {
-        font-size: 58px;
+    h2{
+        font-family: 'Playfair Display', serif;
+        font-size: 65px;
         color: aliceblue;
-        line-height: 1.2;
     }
     h3 {
         font-size: 32px;
@@ -131,6 +140,7 @@ body{
         }
     }
 }
+
 /*SASS de servicios*/
 .body-cards{
     display: flex;
@@ -167,12 +177,13 @@ body{
     }
     p{
         font-family: 'Playfair Display', serif;
+        font-size: 14px;
         line-height: 1.5;
         color: #333;
     }
     h3{
         font-family: 'Playfair Display', serif;
-        font-weight: 400;
+        font-size: 18px;
         margin-bottom: 16px;
         color: #333;
     }
@@ -194,45 +205,48 @@ body{
 }
 /*SASS de portfolio*/
 #titulo{
-    padding: 50px 0px;
+    padding: 50px 0;
 }
-p{
+h2{
     display: flex;
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    color: #333;
     justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    color: aliceblue;
 }
 .portfolio-container {
     display: flex;
     flex-direction: row;
+    align-items: last baseline;
+    margin: 0 100px;
+    #anterior, #siguiente {
+        padding: 10px;
+        height: 40px;
+        width: 120px;
+        color: #333;
+        border: 1px solid #333;
+        border-radius: 4px;
+        transition: .5s;
+        &:hover {
+            background: #333;
+            color: aliceblue;
+        }
+    }
     .carrusel-container {
         display: flex;
         justify-content: start;
-        max-width: 600px;
-        max-height: 600px;
+        width: 600px;
         overflow: hidden;
         margin: auto;
     }
     #carrusel {
         display: flex;
         flex-direction: row;
-    }
-    #img1 img {
-        width: 600px;
-        object-fit: cover;
-    }
-    #img2 img {
-        width: 600px;
-        object-fit: cover;
-    }
-    #img3 img {
-        width: 600px;
-        object-fit: cover;
-    }
-    #img4 img {
-        width: 600px;
-        object-fit: cover;
+        align-items: center;
+        div > img {
+                width: 600px;
+                object-fit: fill;
+        }
     }
 }
 /*SASS de contacto*/
@@ -242,14 +256,14 @@ p{
         display: flex;
         font-family: 'Playfair Display', serif;
         font-size: 65px;
-        color: #333;
+        color: aliceblue;
         justify-content: center;
     }
     p{
         display: flex;
         font-family: 'Playfair Display', serif;
-        font-size: 24px;
-        color: #333;
+        font-size: 26px;
+        color: aliceblue;
         justify-content: center;
         align-items: center;
     }
@@ -277,9 +291,14 @@ p{
         font-size: 24px;
     }
 }
+@media ( max-width: 425px ){
+    #contacto {
+        padding: 44px 16px;
+    }
+}
 footer {
     background-color: #333;
-    padding: 100px 0px;
+    padding: 100px 0;
     margin-top: 100px;
     p{
         color: aliceblue;
@@ -295,9 +314,21 @@ footer {
     a {
         font-family: 'Playfair Display', serif;
         font-size: 24px;
-        padding: 0px 16px;
+        padding: 0 16px;
         color: aliceblue;
         text-decoration: none;
+    }
+}
+@media ( max-width:425px ){
+    footer {
+        width: 100vh;
+        p {
+            font-size: 24px;
+        }
+        a {
+            font-size: 28px;
+            padding: 0 8px;
+        }
     }
 }
 
