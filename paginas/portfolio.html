@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
     <header> 
@@ -30,7 +32,51 @@
         <section id="titulo">
             <h2> Sesion urbana. </h2>
         </section>
-        <div class="portfolio-container">
+        <div class="portfolio-container" id="container">
+            <button id="anterior"> anterior </button>
+            <div class="carrusel-container">
+                <div id="carrusel">
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel1.jpg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel2.jpg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel3.jpg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel4.jpg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel5.jpeg">
+                    </div>
+                    <div class="img-">
+                        <img src="../imagenes/carousel-images/img-carrusel6.jpeg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel7.jpeg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel8.jpeg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel9.jpeg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel10.jpeg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel11.jpeg">
+                    </div>
+                    <div class="img">
+                        <img src="../imagenes/carousel-images/img-carrusel12.jpeg">
+                    </div>
+                </div>
+            </div>
+            <button id="siguiente"> siguiente </button>
+        </div>
+        <div class="portfolio-container" id="container2">
             <button id="anterior"> anterior </button>
             <div class="carrusel-container">
                 <div id="carrusel">
@@ -90,33 +136,5 @@
         </nav>
     </footer>
 </body>
-<script>
-    const image = document.getElementsByClassName("img");
-    const carrusel = document.getElementById("carrusel");
-    const tamaño = 600; 
-    const botonSiguiente = document.getElementById("siguiente");  
-    const botonAnterior = document.getElementById("anterior"); 
-    const arregloImg = Array.from(image);
-    let posActual = 0;
-    const posFinal = arregloImg.length-1;
-    function siguiente (  ) {
-        if( posActual < posFinal ){
-            posActual = posActual+1;
-            carrusel.style.transform = `translateX(-${posActual*tamaño}px)`;
-        }    
-    }
-    function anterior (  ) {
-        if( posActual > 0 ){
-            posActual = posActual-1;
-            console.log("testeo", posFinal, posActual);
-            carrusel.style.transform = `translateX(-${posActual*tamaño}px)`;
-        } 
-    }
-    botonSiguiente.addEventListener("click", (event) => {
-        siguiente (  );
-    });
-    botonAnterior.addEventListener("click", (event) => {
-        anterior (  );
-    });
-</script>
+<script src="../main.js">  </script>
 </html>

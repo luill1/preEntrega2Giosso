@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  background-color: #333;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  z-index: 100%;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header a {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  padding: 0px 14px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  header a {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
