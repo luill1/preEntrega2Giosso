@@ -29,6 +29,7 @@
     }
     const container = document.getElementById("container");
     const container2 = document.getElementById("container2");
+    const container3 = document.getElementById("container3");
     const containerChildrens = Array.from(container.children);
     const anterior1 = containerChildrens[0];
     const carrusel1 = containerChildrens[1].children[0];
@@ -41,7 +42,15 @@
     const siguiente2 = containerChildrens2[2];
     const images2 = Array.from(carrusel2.children);
 
+    const containerChildrens3 = Array.from(container3.children);
+    const anterior3 = containerChildrens3[0];
+    const carrusel3 = containerChildrens3[1].children[0];
+    const siguiente3 = containerChildrens3[2];
+    console.log(carrusel3)
+    const images3 = Array.from(carrusel3.children);
+
     carruselCreator(images1, carrusel1, siguiente1, anterior1);
     carruselCreator(images2, carrusel2, siguiente2, anterior2);
+    carruselCreator(images3, carrusel3, siguiente3, anterior3);
 
 

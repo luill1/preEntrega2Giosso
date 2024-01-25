@@ -226,6 +226,24 @@ h2 {
   object-fit: fill;
 }
 
+#comentarios {
+  height: 350px;
+  margin-top: 100px;
+  overflow: auto;
+  background-color: aliceblue;
+}
+#comentarios li {
+  border: 1px solid #333;
+  width: 350px;
+}
+#comentarios li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+
 /*SASS de contacto*/
 #contacto {
   padding: 50px 20px;

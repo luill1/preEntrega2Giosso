@@ -220,6 +220,27 @@ h2{
         }
     }
 }
+#seccionComentarios {
+    
+}
+#comentarios {
+    height: 350px;
+    margin-top: 100px;
+    overflow: auto;
+    background-color: aliceblue;
+    li{
+        border: 1px solid #333;
+        width: 350px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 12px;
+        }
+    }
+}
+
 /*SASS de contacto*/
 #contacto{
     padding: 50px 20px;
